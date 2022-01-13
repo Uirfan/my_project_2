@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content min-vh-100 text-white" style="background-color: #010409;">
+      <div class="d-flex flex-column justify-content-start">
+        <div class="navbar" style="background-color: #161b22;">
+          <div class="logo align-self-start container">   <div style="display:flex; align-items:center;">
+       <img src="../resources/logo.png" width="32" height="40" alt=""/><span class="h3" style="color:rgb(240, 240, 240); font-weight:600;margin-top: 0.23em; margin-left: 1em;"> CHIRP</span></div>      
+     </div>
+        </div>
+      </div>
+      
+  
+      <div class="container mt-5 align-self-center" style="color:#c9d1d9" >
+            <!-- login -->
+        <div class="row justify-content-evenly">
+          <div class="col-lg-4 col-md-4 col-sm-12 boxstyle" id="signInContainer">
+            <div class="form-group">
+              <h4 style="text-align: center;">Login</h4>
+
+              <label for="inputUserName">Username</label>
+              <input type="text" id="inputUserName" aria-describedby="emailHelp" />
+            </div>
+
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" id="inputPassword" />
+            </div>
+
+            <button id="signInButton" style=" margin-top:2em;width:50%;margin-left:25%; margin-right:25%;color: #ffffff; background-color: #238636;" class="btn ">
+              Sign In
+            </button>
+          </div>
+
+          <!-- register -->
+
+          <div class="col-lg-4 col-md-4 col-sm-12 boxstyle" id = "signUpContainter">
+            <div class="form-group">
+              <h4 style="text-align: center;">Create Account</h4>
+              <div class="form-group">
+                <label for="createFirstName">First Name</label>
+                <input type="text"  id="createFirstName" />
+                <label for="createUserLastName">Last Name</label>
+                <input type="text"  id="createUserLastName" />
+              <label for="createUserName">Username</label>
+              <input type="text"  id="createUserName" />
+              <label for="createPassword">Password</label>
+              <input type="password"  id="createPassword" />
+              <label for="createEmail">Email</label>
+              <input type="text"  id="createEmail" />
+            </div>
+            <div class="form-group form-check"></div>
+            <button class="btn" style="width:50%;margin-left:25%; margin-right:25%;color: #ffffff; background-color: #238636;" id="signUpButton">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
